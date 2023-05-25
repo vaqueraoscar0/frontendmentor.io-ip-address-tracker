@@ -1,0 +1,153 @@
+.searchBar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.searchBar label{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.searchBar .searchBarLayout{
+    display: inline-flex;
+    align-items: center;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance:none;
+}
+
+.searchBar input{
+    width: 500px;
+    height: 50px;
+    padding-left: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.searchBar button{
+    height: 52px;
+    width: 60px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: hsl(0, 0%, 17%);
+    border: none;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.searchBar button:hover{
+    background-color: rgb(55,55,55);
+}
+
+
+@media (max-width: 1200px) {
+    .searchBar label{
+        font-size: 26px;
+        padding-bottom: 5px;
+    }
+
+    .searchBar input{
+        width: 400px;
+        height: 40px;
+        padding-left: 25px;
+    }
+
+    .searchBar button{
+        height: 44px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+    .searchBar label{
+        font-size: 34px;
+    }
+
+    .searchBar input{
+        width: 420px;
+        height: 60px;
+    }
+
+    .searchBar button{
+        height: 64px;
+        width: 60px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .searchBar label{
+        font-size: 34px;
+    }
+
+    .searchBar input{
+        width: 330px;
+        height: 60px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .searchBar label{
+        font-size: 34px;
+    }
+
+    .searchBar input{
+        width: 330px;
+        height: 60px;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .searchBar label{
+        font-size: 34px;
+    }
+
+    .searchBar input{
+        width: 280px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .searchBar label{
+        padding-bottom: 0;
+        font-size: 28px;
+    }
+
+    .searchBar input{
+        font-size: 12px;
+        width: 250px;
+        height: 50px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .searchBar label{
+        font-size: 22px;
+    }
+
+    .searchBar input{
+        font-size: 10px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .searchBar button{
+        height: 44px;
+    }
+}
